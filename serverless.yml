@@ -1,0 +1,11 @@
+# serverless.yml
+
+myNextApplication:
+  component: "@sls-next/serverless-component@3.6.0" # it is recommended you pin the latest stable version of serverless-next.js
+environment:
+  AWS_ACCESS_KEY_ID: AKIA2P4PI2BCJWBPGXGE
+  AWS_SECRET_ACCESS_KEY: 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
+inputs:
+  domain: "www.nextjs-demo-app.com" 
+next-new :
+  component : "./node_modules/@sls-next/serverless-component"

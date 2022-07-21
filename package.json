@@ -1,13 +1,22 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "latest",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  }
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "deploy": "serverless --aws-profile default"
+    },
+    "dependencies": {
+        "@sls-next/aws-cloudfront": "3.6.0",
+        "@sls-next/aws-lambda": "3.6.0",
+        "@sls-next/aws-sqs": "^3.5.3",
+        "@sls-next/domain": "^3.5.3",
+        "@sls-next/serverless-component": "3.6.0",
+        "next": "latest",
+        "next-serverless": "^1.0.0",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "react-google-login": "^5.2.2",
+        "serverless": "^3.21.0"
+    }
 }
